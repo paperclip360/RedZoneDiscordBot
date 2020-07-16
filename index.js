@@ -7,6 +7,8 @@ client.once('ready', () => {
 });
 
 // need to connect to NFL API www.api.nfl.com 
+// NFL API no available to public, must request registration
+// going to need to scrape the NFL website
 
 // need to connect to Yahoo Fantasy api 
 
