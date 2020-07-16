@@ -6,11 +6,16 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
+client.on('message', message => {
+	if (message.content === 'Yo Ray') {
+		message.channel.send(`What's good ${message.author}.... sike don't care. Call me Finkle`);
+	}
+});
 // need to connect to NFL API www.api.nfl.com 
 // NFL API no available to public, must request registration
 // going to need to scrape the NFL website
 
-// need to connect to Yahoo Fantasy api 
+// need to connect to Yahoo Fantasy api, @Mike maybe you can work on getting the bot connected?
 
 // pull list of game ids
 
