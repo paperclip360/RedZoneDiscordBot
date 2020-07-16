@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { token } = require('./config.json');
+const { bot_token } = require('./config.json');
 
 client.once('ready', () => {
 	console.log('Ready!');
@@ -31,4 +31,4 @@ client.on('message', message => {
 
 // need to schedule this job to run every x intervals
 
-client.login(token);
+client.login(bot_token);
